@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    background: url(images/bg-intro-desktop.png) repeat center center fixed;
+    background-color: hsl(0, 100%, 74%);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+     
+    
+}
+.left{
+    
+    flex: 50%;
+    
+    margin: auto;
+    justify-content: center;
+    color: white;
+    box-shadow: 0px 0.5em rgb(219, 112, 112);
+   
+}
+
+.left h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    line-height: 80px;
+}
+
+.left p {
+    font-size: 16px;
+}
+.right {
+    flex: 50%;
+    
+    margin: auto;
+
+}
+
+.promo  {
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(246, 25%, 77%);
+    width: 100%;
+    font-size: smaller;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 0.5em rgb(219, 112, 112);
+}
+
+.promo span {
+    font-weight: 1000;
+    color: white;
+}
+
+
+
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+    padding: 15px;
+    color: hsl(249, 10%, 26%);
+    border: 2px solid hsl(246, 25%, 88%);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    
+    box-shadow: 0px .2em rgb(93, 154, 126);
+
+}
+form p {
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+form p a {
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+    .main{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .main{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    main {
+       flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 90%;
+        padding: 0.8rem;
+        margin: 0 auto;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    .left h1 {
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
